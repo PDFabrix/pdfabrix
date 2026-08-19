@@ -8,9 +8,9 @@ const readmePath = path.join(root, 'README.md')
 const MARK_START = '<!-- gallery:start -->'
 const MARK_END = '<!-- gallery:end -->'
 const COVER_H = 200
+const TD_STYLE = 'background:#eaeef2;padding:12px 8px;'
 const LINK_STYLE = 'text-decoration:none;color:inherit;'
-const FRAME_STYLE = 'display:inline-block;padding:8px;background:#eaeef2;border:1px solid #d0d7de;border-radius:4px;box-shadow:0 2px 6px rgba(27,31,36,.12);line-height:0;'
-const IMG_STYLE = `display:block;height:${COVER_H}px;width:auto;border-radius:2px;background:#fff;`
+const IMG_STYLE = `height:${COVER_H}px;width:auto;border:1px solid #d0d7de;`
 
 function escHtml(s) {
   return String(s || '')
@@ -82,12 +82,10 @@ function listTemplates() {
 function renderCell(item) {
   const base = `./templates/${encodeURI(item.id)}/`
   const cover = `${base}cover.png`
-  let html = '<td align="center" valign="top" width="33%">'
+  let html = `<td align="center" valign="top" width="33%" style="${TD_STYLE}">`
   html += `<a href="${base}" style="${LINK_STYLE}">`
-  html += `<span style="${FRAME_STYLE}">`
   html += `<img src="${cover}" height="${COVER_H}" alt="${escHtml(item.name)}" style="${IMG_STYLE}">`
-  html += '</span><br>'
-  html += `<strong>${escHtml(item.name)}</strong></a>`
+  html += `<br><strong>${escHtml(item.name)}</strong></a>`
   if (item.desc) html += `<br>${escHtml(item.desc)}`
   if (item.author) html += `<br><em>by ${escHtml(item.author)}</em>`
   html += '</td>'
