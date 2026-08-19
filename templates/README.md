@@ -59,6 +59,8 @@ certificate-a4
 
 Before submitting, make sure the template imports and previews correctly in PDFDog and that you have permission to share any included fonts, images, or other assets.
 
-All submissions are reviewed before being added to the app gallery.
+All submissions are reviewed before being added to the community gallery.
+
+Maintainers: after merging template changes, run `npm run gallery` at the repository root to refresh the gallery in [README.md](../README.md).
 
 For questions, open a [GitHub issue](https://github.com/PDF-Dog/pdfdog/issues) or email [support@getpdfdog.com](mailto:support@getpdfdog.com).

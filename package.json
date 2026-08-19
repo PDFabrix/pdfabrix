@@ -1,0 +1,8 @@
+{
+  "name": "pdfdog-templates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gallery": "node scripts/gen-readme.mjs"
+  }
+}
