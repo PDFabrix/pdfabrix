@@ -8,8 +8,6 @@ const readmePath = path.join(root, 'README.md')
 const MARK_START = '<!-- gallery:start -->'
 const MARK_END = '<!-- gallery:end -->'
 const COVER_H = 200
-const TD_STYLE = 'background:#eaeef2;padding:12px 8px;'
-const LINK_STYLE = 'text-decoration:none;color:inherit;'
 const IMG_STYLE = `height:${COVER_H}px;width:auto;border:1px solid #d0d7de;`
 
 function escHtml(s) {
@@ -79,17 +77,23 @@ function listTemplates() {
   return out
 }
 
-function renderCell(item) {
+function renderCoverCell(item) {
   const base = `./templates/${encodeURI(item.id)}/`
   const cover = `${base}cover.png`
-  let html = `<td align="center" valign="top" width="33%" style="${TD_STYLE}">`
-  html += `<a href="${base}" style="${LINK_STYLE}">`
-  html += `<img src="${cover}" height="${COVER_H}" alt="${escHtml(item.name)}" style="${IMG_STYLE}">`
-  html += `<br><strong>${escHtml(item.name)}</strong></a>`
+  return `<td align="center" valign="top" width="33%"><a href="${base}"><img src="${cover}" height="${COVER_H}" alt="${escHtml(item.name)}" style="${IMG_STYLE}"></a></td>`
+}
+
+function renderInfoCell(item) {
+  const base = `./templates/${encodeURI(item.id)}/`
+  let html = `<td align="center" valign="top" width="33%"><a href="${base}"><strong>${escHtml(item.name)}</strong></a>`
   if (item.desc) html += `<br>${escHtml(item.desc)}`
   if (item.author) html += `<br><em>by ${escHtml(item.author)}</em>`
   html += '</td>'
   return html
+}
+
+function emptyCell() {
+  return '<td width="33%"></td>'
 }
 
 function renderGallery(items) {
@@ -99,8 +103,10 @@ function renderGallery(items) {
   for (let i = 0; i < items.length; i += 3) {
     const chunk = items.slice(i, i + 3)
     while (chunk.length < 3) chunk.push(null)
-    const cells = chunk.map((it) => (it ? renderCell(it) : '<td width="33%"></td>'))
-    rows.push(`<tr>${cells.join('\n')}</tr>`)
+    const covers = chunk.map((it) => (it ? renderCoverCell(it) : emptyCell()))
+    const infos = chunk.map((it) => (it ? renderInfoCell(it) : emptyCell()))
+    rows.push(`<tr>${covers.join('\n')}</tr>`)
+    rows.push(`<tr>${infos.join('\n')}</tr>`)
   }
 
   return [
