@@ -1,9 +1,42 @@
-# pdfdog
+# PDF Dog
 
-Official PDF Dog community for bug reports, feature requests and templates.
+PDF Dog is a desktop PDF tool focused on **automation, batch processing, and saving time on repetitive PDF tasks**.
 
-Browse templates below. To contribute, see [CONTRIBUTING.md](./templates/CONTRIBUTING.md).
+Instead of handling PDF files one by one, PDF Dog helps you process multiple files at once and automate common workflows — so you can spend less time clicking and more time getting work done.
 
+### Why PDF Dog?
+
+- ⚡ **Batch processing** — Process multiple PDF files at once.
+- 🤖 **Automation** — Automate repetitive PDF workflows.
+- ⏱️ **Save time** — Reduce manual operations and repetitive clicks.
+- 🖥️ **Desktop-first** — Fast, lightweight, and designed for everyday use.
+- 🔒 **Privacy-focused** — Your files can be processed locally on your device.
+
+### Free to Use
+
+PDF Dog is **free to use**.
+
+Core PDF tools and batch processing features are available for free. Some advanced features are available as optional paid upgrades.
+
+You can use PDF Dog without a subscription for the core functionality.
+
+🌐 **Website:** https://getpdfdog.com
+
+💳 **Pricing:** https://getpdfdog.com/pricing
+
+## Community
+
+This repository is the official PDF Dog community for:
+
+- Bug reports
+- Feature requests
+- Workflow ideas
+- Template sharing
+- Product feedback
+
+Browse the templates below.
+
+To contribute, see [CONTRIBUTING.md](./templates/CONTRIBUTING.md).
 ## Gallery
 
 <!-- gallery:start -->
