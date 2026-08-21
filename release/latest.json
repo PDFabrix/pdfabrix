@@ -1,0 +1,12 @@
+{
+    "version": "0.1.0-alpha.1",
+    "downloads": {
+        "win32": "github.com/PDF-Dog/pdfdog/releases/download/v0.1.0-alpha.1/pdf-dog-v0.1.0-alpha.1-setup.exe",
+        "darwin": "",
+        "linux": ""
+    },
+    "notes": "meta version 0.1.0-alpha.1, only support win32.",
+    "urgent": false,
+    "urgentTip_zh": "",
+    "urgentTip_en": ""
+}
