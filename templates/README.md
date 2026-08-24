@@ -1,11 +1,11 @@
 # Community Templates
 
-This directory contains PDFDog templates contributed by the community.
+This directory contains PDFabrix templates contributed by the community.
 
 
 ## How to contribute
 
-Create your template with the **PDFDog desktop app**, then export it as a **Folder**.
+Create your template with the **PDFabrix desktop app**, then export it as a **Folder**.
 
 In **Workspace → Templates**:
 
@@ -21,7 +21,7 @@ templates/
 └── your-template-id/
     ├── meta.json
     ├── cover.png
-    └── template.pdfdog
+    └── template.pdfabrix
 ```
 
 ### Folder ID
@@ -42,13 +42,13 @@ certificate-a4
 
 ### Required files
 
-| File              | Description                                           |
-| ----------------- | ----------------------------------------------------- |
-| `meta.json`       | Template name, description, author, and contact email |
-| `cover.png`       | Template preview image                                |
-| `template.pdfdog` | Exported PDFDog template                              |
+| File               | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `meta.json`        | Template name, description, author, and contact email |
+| `cover.png`        | Template preview image                                |
+| `template.pdfabrix` | Exported PDFabrix template                           |
 
-> **Important:** Use **Export → Folder**, not **Export → Template**. The single `.pdfdog` file is not the format used in this directory.
+> **Important:** Use **Export → Folder**, not **Export → Template**. The single `.pdfabrix` file is not the format used in this directory.
 
 ## Submit a Pull Request
 
@@ -57,10 +57,10 @@ certificate-a4
 3. Commit and push your changes.
 4. Open a pull request against `main`.
 
-Before submitting, make sure the template imports and previews correctly in PDFDog and that you have permission to share any included fonts, images, or other assets.
+Before submitting, make sure the template imports and previews correctly in PDFabrix and that you have permission to share any included fonts, images, or other assets.
 
 All submissions are reviewed before being added to the community gallery.
 
 Maintainers: after merging template changes, run `npm run gallery` at the repository root to refresh the gallery in [README.md](../README.md).
 
-For questions, open a [GitHub issue](https://github.com/PDF-Dog/pdfdog/issues) or email [support@getpdfdog.com](mailto:support@getpdfdog.com).
+For questions, open a [GitHub issue](https://github.com/PDFabrix/pdfabrix/issues) or email [support@pdfabrix.com](mailto:support@pdfabrix.com).

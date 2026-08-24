@@ -28,10 +28,10 @@ function readMeta(dir) {
 }
 
 function hasPack(dir) {
-  if (fs.existsSync(path.join(dir, 'template.pdfdog'))) return true
+  if (fs.existsSync(path.join(dir, 'template.pdfabrix'))) return true
   let hits = []
   try {
-    hits = fs.readdirSync(dir).filter((n) => n.toLowerCase().endsWith('.pdfdog'))
+    hits = fs.readdirSync(dir).filter((n) => n.toLowerCase().endsWith('.pdfabrix'))
   } catch {
     return false
   }
