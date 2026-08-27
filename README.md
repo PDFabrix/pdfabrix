@@ -1,24 +1,30 @@
 # PDFabrix
 
-PDFabrix is a desktop PDF tool focused on **automation, batch processing, and saving time on repetitive PDF tasks**.
+PDFabrix is a **desktop PDF automation tool** for batch processing, PDF generation, templates, and repetitive document workflows.
 
-Instead of handling PDF files one by one, PDFabrix helps you process multiple files at once and automate common workflows — so you can spend less time clicking and more time getting work done.
+Instead of processing PDF files one by one, PDFabrix helps you process files in batches, generate documents from templates and data, and automate repetitive PDF workflows.
 
 ### Why PDFabrix?
 
-- ⚡ **Batch processing** — Process multiple PDF files at once.
-- 🤖 **Automation** — Automate repetitive PDF workflows.
-- ⏱️ **Save time** — Reduce manual operations and repetitive clicks.
-- 🖥️ **Desktop-first** — Fast, lightweight, and designed for everyday use.
-- 🔒 **Privacy-focused** — Your files can be processed locally on your device.
+* ⚡ **Batch processing** — Process multiple PDF files at once.
+* 🤖 **Automation** — Automate repetitive PDF workflows.
+* 📄 **PDF generation** — Generate PDFs from reusable templates and data.
+* 📋 **Templates** — Create reusable document templates for recurring tasks.
+* ⏱️ **Save time** — Reduce manual operations and repetitive clicks.
+* 🖥️ **Desktop-first** — Fast, lightweight, and designed for everyday workflows.
+* 🔒 **Privacy-focused** — Files can be processed locally on your device.
 
-### Free to Use
+## Use Cases
 
-PDFabrix is **free to use**.
+PDFabrix is useful for repetitive document workflows such as:
 
-Core PDF tools and batch processing features are available for free. Some advanced features are available as optional paid upgrades.
+* Generate PDFs from Excel or CSV data
+* Create invoices, certificates, reports, and forms from templates
+* Batch process large numbers of PDF files
+* Automate recurring PDF generation tasks
+* Create reusable templates for recurring documents
 
-You can use PDFabrix without a subscription for the core functionality.
+## Download
 
 🌐 **Website:** https://pdfabrix.com
 
@@ -26,17 +32,19 @@ You can use PDFabrix without a subscription for the core functionality.
 
 ## Community
 
-This repository is the official PDFabrix community for:
+This repository is the official home of PDFabrix for:
 
-- Bug reports
-- Feature requests
-- Workflow ideas
-- Template sharing
-- Product feedback
+* Bug reports
+* Feature requests
+* Workflow ideas
+* Template sharing
+* Product feedback
+* Releases
 
-Browse the templates below.
+Browse the templates in [`templates/`](https://github.com/PDFabrix/pdfabrix/tree/main/templates).
 
-To contribute, see [templates/README.md](./templates/README.md).
+To contribute templates, see [`templates/README.md`](https://github.com/PDFabrix/pdfabrix/blob/main/templates/README.md).
+
 ## Gallery
 
 <!-- gallery:start -->
