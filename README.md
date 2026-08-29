@@ -4,6 +4,8 @@ PDFabrix is a **desktop PDF automation tool** for batch processing, PDF generati
 
 Instead of processing PDF files one by one, PDFabrix helps you process files in batches, generate documents from templates and data, and automate repetitive PDF workflows.
 
+# 🎁 [Early Access: Get Pro features free for 90 days！ Check Here](https://pdfabrix.com/early-access)
+
 ### Why PDFabrix?
 
 * ⚡ **Batch processing** — Process multiple PDF files at once.
